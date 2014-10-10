@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang=zh-CN>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
+		<link type="text/css" href="style.css" rel="stylesheet" />
+		<script src="../lib/modernizr.js"></script>
+		<title>微刊</title>
+	</head>
+	<body>
+		<div class="stage">
+			<div class="act act-1">
+				<div class="screen screen-1"></div>
+			</div>
+			<div class="act act-2">
+				<div class="screen screen-1"></div>
+				<div class="screen screen-2"></div>
+			</div>
+			<div class="act act-3">
+				<div class="screen screen-1"></div>
+				<div class="screen screen-2"></div>
+				<div class="screen screen-3"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../lib/jquery/jquery.js"></script>
+		<script type="text/javascript" src="../src/jquery.pagetransition.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".stage").pageTransition();
+			});
+		</script>
+	</body>
+</html>
